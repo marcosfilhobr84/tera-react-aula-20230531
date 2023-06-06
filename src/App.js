@@ -2,9 +2,12 @@ import Home from "./components/pages/Home";
 import "./styles/normalize.css";
 import "./styles/fontawesome.min.css";
 import "./styles/main.css";
+import Users from "./components/pages/Users";
+import UserBlog from "./components/pages/UserBlog";
+import UserPostForm from "./components/pages/UserPostForm";
 
 function App() {
-  return <Home />;
+  return <UserPostForm />;
 }
 
 export default App;
