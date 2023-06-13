@@ -1,5 +1,3 @@
-//https://63cf09718a780ae6e6710dbe.mockapi.io/
-
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Home from "./components/pages/Home";
@@ -15,10 +13,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/users" element={<Users />}></Route>
-        <Route path="/users/:UserId" element={<UserBlog />}></Route>
-        <Route path="/users/:UserId/post" element={<UserPostForm />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/:userId" element={<UserBlog />} />
+        <Route path="/users/:userId/post" element={<UserPostForm />} />
       </Routes>
     </BrowserRouter>
   );
