@@ -24,7 +24,7 @@ export default function Home() {
       });
   }, []);
 
-  console.log(users);
+  //console.log(users);
 
   return isLoading ? (
     <Loading />
@@ -36,6 +36,7 @@ export default function Home() {
       <select
         onChange={(event) => setCurrentUser(event.target.value)}
         className="home__select-users"
+        defaultValue={currentUser}
       >
         <option value="">Selecione um usuário</option>
         {users
